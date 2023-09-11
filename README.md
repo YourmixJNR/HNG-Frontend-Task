@@ -5,6 +5,7 @@
 - [Project Overview](#project-overview)
 - [Task Description](#task-description)
 - [Implementation](#implementation)
+- [Error Handling](#error-handling)
 - [Testing](#testing)
 - [Contributing](#contributing)
 
@@ -36,6 +37,14 @@ To fulfill the task requirements, I followed these steps:
 4. **GitHub Hosting:** I hosted the web page on GitHub Pages, making it accessible via the URL [https://github.com/YourmixJNR/HNG-Frontend-Task.git/](https://github.com/YourmixJNR/HNG-Frontend-Task.git/).
 
 5. **Testing:** I tested the page thoroughly to ensure that all elements were displayed correctly, real-time data updated as expected, and error handling worked as intended. I used the data-testid attributes for testing.
+
+## Error Handling
+
+Error handling was implemented to improve user experience:
+
+- **Missing Profile Picture:** If the Slack profile picture is missing, the code displays the Slack profile picture no matter what and provides a default alt text for accessibility.
+
+- **Missing GitHub URL:** If the GitHub repository URL is not found, the code displays an error message and removes the link to prevent broken links.
 
 ## Testing
 
