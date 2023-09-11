@@ -19,3 +19,21 @@ updateDateTime();
 
 // Set up a timer to update the values every second (or adjust the interval as needed)
 setInterval(updateDateTime, 1000); // 1000 milliseconds = 1 second
+
+// Function to handle errors
+function handleErrors() {
+    const profileImage = document.querySelector('[data-testid="slackDisplayImage"]');
+    profileImage.onerror = () => {
+        profileImage.src = './assets/YourmixJNR.png'; // Display default image
+        profileImage.alt = 'Default Profile';
+    };
+
+    const githubURL = document.querySelector('[data-testid="githubURL"]');
+    githubURL.onerror = () => {
+        githubURL.textContent = 'GitHub Repository Not Found'; // Provide error message
+        githubURL.href = '#'; // Remove the link
+    };
+}
+
+// Call the update an
+handleErrors();
